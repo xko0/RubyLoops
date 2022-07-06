@@ -1,4 +1,4 @@
-def half_pyramid
+def pyramid
     puts "Hi welcome to my pyramide ! How many floors do you want ?"
     print "->"
     floors = gets.chomp.to_i
@@ -12,8 +12,9 @@ def half_pyramid
     for n in 0..floors
     (floors-n).times {print " "}
 	n.times {print "#"}
+    (n-1).times {print "#"}
 	puts
     end
 end
 
-half_pyramid
+pyramid
